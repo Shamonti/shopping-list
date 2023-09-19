@@ -27,10 +27,17 @@ body {
 
 .app {
   min-height: 66vh;
-  display: grid;
+  text-align: center;
+  background-color: var(--color-lightest);
+  padding: 4rem 2rem;
+  /* display: grid;
   grid-template-columns: 34rem 44rem;
   column-gap: 4rem;
-  align-items: start;
+  align-items: start; */
+}
+
+h1 {
+  margin-bottom: 1.5rem;
 }
 
 .button {
@@ -48,7 +55,7 @@ body {
   background-color: var(--color-dark);
 }
 
-.sidebar ul {
+ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -57,44 +64,45 @@ body {
   margin-bottom: 2rem;
 }
 
-.sidebar li {
-  display: grid;
-  grid-template-columns: 4.8rem 1fr auto;
+li {
+  display: flex;
+  /* grid-template-columns: 4.8rem 1fr auto; */
   align-items: center;
-  column-gap: 1.6rem;
+  column-gap: 1rem;
 
   padding: 1.2rem;
   border-radius: 7px;
   transition: 0.5s;
+  text-transform: capitalize;
 }
 
 .selected,
-.sidebar li:hover {
+li:hover {
   background-color: var(--color-lightest);
 }
 
-.sidebar li img {
+li img {
   border-radius: 50%;
   width: 100%;
   grid-row: span 2;
 }
 
-.sidebar li h3 {
+li h3 {
   grid-row: 1;
   grid-column: 2;
 }
 
-.sidebar li p {
+li p {
   grid-row: 2;
   grid-column: 2;
 }
 
-.sidebar li .button {
+li .button {
   grid-row: span 2;
   grid-column: 3;
 }
 
-.sidebar > .button {
+.button {
   float: right;
   margin-right: 1.2rem;
 }
@@ -156,7 +164,7 @@ select:focus {
 }
 
 form .button {
-  margin-top: 0.6rem;
+  /* margin-top: 0.6rem; */
   grid-column: 2;
 }
 
